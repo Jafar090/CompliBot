@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Registration Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/png" href="/static/pngegg.png">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <img src="/static/pngegg.png" alt="Bot Logo" class="bot-logo">
+            <div class="bot-title">
+                <span class="bot-name">Siri</span>
+                <span class="bot-tagline">Your Fraud Registration Assistant</span>
+            </div>
+        </header>
+        <div id="chat-box" class="chat-box"></div>
+        <form id="chat-form" class="chat-form" autocomplete="off">
+            <button type="button" id="mic-btn" class="mic-btn" title="Speak"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><rect x="9" y="9" width="6" height="8" rx="3"/><line x1="12" y1="17" x2="12" y2="22"/></svg></button>
+            <input type="text" id="user-input" class="user-input" placeholder="Type your message..." required autofocus>
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+    </div>
+    <script src="/static/chat.js"></script>
+</body>
+</html>
